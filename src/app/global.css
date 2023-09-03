@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+    margin: 0 auto;
+    display:flex;
+    background-color: rgba(249, 249, 249, 1);
+    overflow-x: hidden;
+}
+.main{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1.5rem;
+  overflow-x: hidden;
+}
+.sidebar{
+  position: relative;
+  right: 1.87rem;
+  overflow-x: hidden;
+}
+.content{
+  flex-direction: column;
+  justify-content: center;
+}
+.postdetail{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #999;
+  padding: 20px;
+}
+a{
+  text-decoration: none;
+}
+@media (max-width: 480px) and (min-width: 360px) {
+  .main {
+    display: block; /* 取消 flex 屬性 */
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main {
+    padding: 0 3% 0 5%;
+    overflow-x:hidden;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .main {
+    padding: 0 3% 0 5%;
+    overflow-x:hidden;
+  }
+}

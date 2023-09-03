@@ -1,0 +1,281 @@
+@import 'media-mixins/index';
+.Introblock{
+    width: 23.625rem;
+    min-height: 200px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: var(--white, #FFF);
+    margin-left: 135px;
+    padding-top:23px;
+    display: flex;
+    flex-direction: column;
+    @include mobile {
+        width: 100vw;
+        margin-left: 0;
+      }
+      @include tablet {
+        margin:auto;
+      }
+      @include laptop {
+        margin:auto;
+      }
+      @include largescreen {
+        margin-left: 3rem;
+        max-width: 20rem;
+      }
+
+
+    .edit{
+        width: 21.43931rem;
+        height: 2.5rem;
+        flex-shrink: 0;
+        border-radius: 0.375rem;
+        background: #5458F7;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem; /* 150% */
+        cursor: pointer;
+        margin-left: 0.99rem;
+        border-color: #5458F7;
+        align-items: center; 
+        justify-content: center;
+        @include mobile {
+            width: 85%;
+            margin-left: 1.7rem;
+          }
+        @include largescreen {
+            width: 90%;
+          }
+
+    }
+    .canceledit{
+        width: 21.43931rem;
+        height: 2.5rem;
+        flex-shrink: 0;
+        border-radius: 0.375rem;
+        background: #D3D3D3;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        color: black;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem; /* 150% */
+        cursor: pointer;
+        margin-left: 0.99rem;
+        align-items: center; 
+        justify-content: center;
+    }
+    .canceledit1{
+        width: 21.43931rem;
+        height: 2.5rem;
+        flex-shrink: 0;
+        border-radius: 0.375rem;
+        background: #D3D3D3;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        color: black;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem; /* 150% */
+        cursor: pointer;
+        margin-left: 0.99rem;
+        align-items: center; 
+        justify-content: center;
+        position: relative;
+        top:1rem;
+    }
+    }
+    .Introtitle{
+        color: #525252;
+        font-family: Outfit;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 133.333% */
+        margin-top: 2rem;
+        margin-left: 26.32px;
+    }
+    .IntroContent{
+        color: #5C5C5C;
+        font-family: Outfit;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem; /* 150% */
+        margin-top: 0.5rem;
+        margin-left: 1.81rem;
+        margin-right: 1.81rem ;
+        word-wrap: break-word;
+    }
+    .IntroTags{
+        color: #5C5C5C;
+        font-family: Outfit;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem; /* 150% */
+        margin-top: 0.5rem;
+        margin-left: 1.81rem;
+        margin-right: 1.81rem ;
+        margin-bottom: 2.75rem;
+        word-wrap: break-word;
+    }
+
+.copyright{
+    display: flex;
+    width: 274px;
+    height: 44px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #525252;
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    top:24px;
+    left:167px;
+    @include mobile {
+        display:none;
+      }
+      @include tablet {
+        display:none;
+      }
+      @include laptop {
+        display:none;
+      }
+      @include largescreen {
+        left:80px;
+      }
+
+}
+.Introblockbtn{
+    width: 23.625rem;
+    min-height: 28.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: var(--white, #FFF);
+    margin-left:8.44rem;
+    @include mobile {
+        width: 100vw;
+        margin-left:0;
+      }
+      @include tablet {
+        margin:auto;
+      }
+      @include laptop {
+        margin:auto;
+      }
+    .editbtn{
+        width: 21.43931rem;
+        height: 2.5rem;
+        flex-shrink: 0;
+        border-radius: 0.375rem;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        color: black;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem; /* 150% */
+        cursor: pointer;
+        margin-left: 0.99rem;
+        align-items: center; 
+        justify-content: center;
+        margin-top:1.44rem;
+        background: #D3D3D3;
+        border-color: #D3D3D3;
+    }
+    .Introtitle{
+        color: #525252;
+        font-family: Outfit;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem; /* 133.333% */
+        margin-top: 2rem;
+        margin-left: 1.65rem;
+        margin-bottom: 0.56rem;
+    }
+    .IntroEdit{
+        width: 18.0625rem;
+        height: 5.25rem;
+        flex-shrink: 0;
+        border-radius: 0.625rem;
+        border: 1px solid #BFBFBF;
+        background: #F0F2F5;
+        resize: none;
+        margin-left: 1.81rem;
+        padding: 1rem;
+    }
+    .btnbox{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2.5rem;
+        margin-bottom: 1.37rem;
+        justify-content: center; 
+        align-items: center;
+        .editbtnok{
+            width: 5.8125rem;
+            height: 2.4375rem;
+            flex-shrink: 0;
+            border-radius: 0.375rem;
+            background: #5458F7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            color: #FFF;
+            text-align: center;
+            font-family: Outfit;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.5rem; /* 150% */
+            align-items: center;
+            margin-right: 1.13rem;
+            cursor: pointer;
+        }
+        .editbtnno{
+            width: 5.8125rem;
+            height: 2.4375rem;
+            flex-shrink: 0;
+            border-radius: 0.375rem;
+            background: #D3D3D3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            color: #FFF;
+            text-align: center;
+            font-family: Outfit;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.5rem; /* 150% */
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+}

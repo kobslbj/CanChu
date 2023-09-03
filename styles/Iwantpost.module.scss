@@ -1,0 +1,104 @@
+@import 'media-mixins/index';
+.Iwantpostboard{
+    width: 48.0625rem;
+    height: 12.30969rem;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: var(--white, #FFF);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:0;
+    position: relative;
+    @include mobile {
+        width: 100vw;
+      }
+    @include tablet {
+        width: 100vw;
+      }
+      
+    @include laptop{
+        width: 70vw;
+    }
+    @include largescreen{
+        max-width: 50vw;
+    }
+
+    .photo{
+        border-radius: 74px;
+        margin-top:1.31rem ;
+        margin-left: 1.53rem;
+        object-fit: cover;
+ 
+    }
+
+    .talktalk{
+        width: 37.75rem;
+        height: 99px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1px solid #D9D9D9;
+        background: #F0F2F5;
+        margin-top:1.31rem ;
+        margin-left: 1.6rem;
+        padding-left: 0.97rem;
+        padding-top: 0.89rem;
+        color: #767676;
+        font-family: Outfit;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem; 
+        resize: none;
+        @include mobile {
+            width: 55%;
+        }
+        @include tablet {
+            width: 70%;
+          }
+        @include laptop{
+            width: 70%;
+        }
+        @include largescreen{
+            max-width: 35vw;
+        }
+    }
+    .posting{
+        width: 8.80075rem;
+        height: 2.46675rem;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: #5458F7;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        color: #FFF;
+        align-items: center;
+        font-family: Outfit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        justify-content: center;
+        position: absolute;
+        left: calc(79%); 
+        top: calc(75%);
+        cursor: pointer;
+        border: none;
+        @include laptop{
+            left: calc(70%); 
+        }
+        @include mobile{
+            left: calc(60%); 
+        }
+        @include tablet{
+            left: calc(70%); 
+        }
+        @include largescreen{
+            left: calc(70%); 
+        }
+    }
+
+
+}

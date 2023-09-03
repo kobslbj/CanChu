@@ -1,0 +1,213 @@
+@import 'media-mixins/index';
+.sideboardContainer {
+    display: flex;
+    flex-direction: column;
+    @include mobile{
+        display: none;
+    }
+      @include tablet{
+        display: none;
+      }
+
+
+.sideboard{
+    width: 23.125rem;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    @include laptop{
+        width: 100%;
+      }
+    @include largescreen{
+        width: 100%;
+    }
+    .sidecontents{
+        margin: 21px 21px 25px 25px;
+        border: 1px;
+        display: flex;
+        flex-direction: column;
+        @include laptop{
+            width: 90%;
+          }
+        .author_info{
+            display: flex;
+            flex-direction: row;
+            align-items:  center;
+            height: 42px;
+            flex-shrink: 0;
+            margin-bottom:20px ;
+            
+            cursor: pointer;
+            .author_pic{
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                background-color: rgba(217, 217, 217, 1);
+                margin-right:14px ;
+                object-fit: cover;
+            }
+            .author_name{
+                max-width: 100%;
+                height: 24px;
+                font-family: Outfit;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #000;
+                word-wrap: break-word;
+            }
+            .btn{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            left: calc(50%); 
+            .confirmbtn{
+                width: 4.1875rem;
+                height: 2.5rem;
+                flex-shrink: 0;
+                border-radius: 0.375rem;
+                background: #5458F7;
+                flex-shrink: 0;
+                color: #FFF;
+                text-align: center;
+                font-family: Outfit;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.5rem; /* 150% */
+                border: none;
+                cursor: pointer;
+                transition:  0.3s ease; 
+
+                
+            }
+            .confirmbtn:hover {
+                background: #3c40c6; /* Change the background color on hover */
+            }
+            .cancelbtn{
+                width: 4.1875rem;
+                height: 2.5rem;
+                flex-shrink: 0;
+                border-radius: 0.375rem;
+                background: #BFBFBF;
+                flex-shrink: 0;
+                color: #FFF;
+                text-align: center;
+                font-family: Outfit;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.5rem; /* 150% */
+                border: none;
+                cursor: pointer;
+                transition:  0.3s ease;
+                position: relative;
+                left: 1rem;
+            }
+            .cancelbtn:hover {
+                background: #909090; /* Change the background color on hover */
+            }
+        }
+        }
+        .lookforall{
+            display:flex;
+            flex-direction:row;
+            margin-bottom:25px;
+            cursor: pointer;
+            .lookforalltitle{
+                margin:6.5px 0px 9px 14px;
+                text-decoration: underline;
+                color: #000;
+                font-family: Outfit;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                cursor: pointer;
+                background: none;
+                border: none;
+            }
+        }
+ 
+        .mygoodfriend{
+            border-top: 1px solid rgba(217, 217, 217, 1);
+            border-right: none;
+            border-bottom: none;
+            border-left: none;
+            display:flex;
+            flex-direction:column;
+            @include laptop{
+                width: 90%;
+            }
+
+            .goodfriendinfo{
+                display:flex;
+                flex-direction:row;
+                margin-bottom:20px;
+                
+                .myfriendlogo{
+                    margin-top:20px;
+                    margin-left:8px;
+                }
+                .myfriendtitle{
+                    margin-top:20px;
+                    margin-left:21.21px;
+                    width: 72px;
+                    height: 24px;
+                    font-family: Outfit;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: rgba(118, 118, 118, 1);
+                }
+            }
+
+
+        }
+        
+    }
+
+}
+.copyright{
+    display: flex;
+    max-width: 274px;
+    height: 44px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #525252;
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 2rem;
+    @include mobile{
+        display: none;
+      }
+    @include tablet{
+        display: none;
+      }
+    @include laptop{
+        margin-left: 1rem;
+        width: 80%;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

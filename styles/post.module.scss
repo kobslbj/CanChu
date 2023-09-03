@@ -1,0 +1,400 @@
+@import 'media-mixins/index';
+.board {
+    display: flex;
+    flex-direction: column;
+    width: 48.0625rem;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(211, 211, 211, 0.56);
+    background: #fff;
+    position: relative;
+    margin-top: 1.43rem;
+    overflow-x: hidden;
+    @include mobile {
+      width: 100vw;
+    }
+    @include tablet {
+      width: 100vw;
+
+    }
+    @include laptop {
+      max-width: 70vw;
+  
+    }
+    @include largescreen {
+      max-width: 50vw;
+  
+    }
+    .news {
+      flex-shrink: 0;
+      margin: 20px 250.98px 41px 40px;
+      width: 100%;
+      .info {
+        display: flex;
+        height: 76.811px;
+        flex-shrink: 0;
+  
+        .photo {
+          border-radius: 50%;
+          object-fit: cover;
+        }
+  
+        .author {
+          display: flex;
+          width: 100%;
+          height: 58.811px;
+          flex-direction: column;
+          flex-shrink: 0;
+          color: #000;
+          font-size: 16px;
+          font-family: Outfit;
+          font-weight: 700;
+          line-height: 24px;
+          margin: 18px 0px 0px 12.03px;
+        }
+  
+        .time {
+          display: flex;
+          width: 8rem;
+          height: 26px;
+          flex-direction: column;
+          flex-shrink: 0;
+          color: #909090;
+          font-size: 13px;
+          font-family: Outfit;
+          line-height: 24px;
+        }
+
+
+      }
+  
+      .post {
+          display: flex;
+          width: 90%;
+          flex-direction: column;
+          flex-shrink: 0;
+          color: #000;
+          font-size: 16px;
+          font-family: Outfit;
+          font-weight: 500;
+          line-height: 24px;
+          margin-top: 15.38px;
+          white-space: pre-line;
+          word-wrap: break-word;
+          @include mobile {
+            width: 80vw;
+          }
+      }
+      .clamptext {
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3; /* 調整行數 */
+        -webkit-box-orient: vertical;
+      }
+      
+      .expandedText {
+        display: block;
+        overflow: visible;
+        height: auto;
+      }
+      
+      .readMoreButton {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: black; /* 調整按鈕顏色 */
+        font-size: 16px; /* 調整字體大小 */
+        margin-top: 0.5rem; /* 調整按鈕上方間距 */
+        margin-left: 30rem;
+        font-weight: bold;
+        @include mobile {
+          margin-left: 13rem;
+        }
+        @include laptop {
+          margin-left: 25rem;
+        }
+      }
+      .lookmorebtn{
+      background-color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      position: relative;
+      left:35rem;
+      }
+      .postarea{
+        width: 80%;
+        height: 7.6875rem;
+        flex-shrink: 0;
+        border-radius: 0.625rem;
+        border: 1px solid #BFBFBF;
+        background: #F0F2F5;
+        margin-top: 0.75rem;
+        padding: 0.89rem;
+        color: #767676;
+        font-family: Outfit;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem; /* 133.333% */
+        resize: none;
+        @include mobile {
+          width: 75%;
+        }
+      }
+      .buttonbox{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top:0.87rem;
+    .confirmbtn{
+            width: 5.8125rem;
+            height: 2.4375rem;
+            flex-shrink: 0;
+            border-radius: 0.375rem;
+            background: #5458F7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            align-items: center; /* 將文字在垂直方向上置中 */
+            color: #FFF;
+            text-align: center;
+            font-family: Outfit;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.5rem; /* 150% */
+            border: none;
+            cursor: pointer;
+          }
+          .cancelbtn{
+            width: 5.8125rem;
+            height: 2.4375rem;
+            flex-shrink: 0;
+            border-radius: 0.375rem;
+            background: #D3D3D3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /* 將文字在垂直方向上置中 */
+            flex-shrink: 0;
+            color: #FFF;
+            text-align: center;
+            font-family: Outfit;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.5rem; /* 150% */
+            border: none;
+            cursor: pointer;
+            left: 1rem;
+            position: relative;
+          }
+      }
+      
+    }
+      .lines{
+        border: 1px;
+        background: rgba(191, 191, 191, 1);
+        border: 1px solid rgba(191, 191, 191, 1);
+        margin-left: 34px;
+        margin-right: 34px;
+        position: relative;
+      }    
+      .function {
+      display: flex;
+      flex-direction: row;
+      width: 60px;
+      height: 28px;
+      margin:12px 666px 12px 43px;
+      position: relative;
+  
+      .btn1 {
+        margin-right:12px;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+  
+      .btn2 {
+        margin:auto;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  
+    .numbers {
+      display: flex;
+      flex-direction: row;
+      height: 37.13px;
+      flex-shrink: 0;
+      margin-top: 10px;
+      border: 1px solid #d9d9d9;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      position: relative;
+  
+      .number_like {
+        width: 14.07913rem;
+        height: 25px;
+        flex-shrink: 0;
+        color: #5c5c5c;
+        font-size: 16px;
+        font-family: Roboto;
+        line-height: 24px;
+        margin: 0px 24.8rem 10px 35px;
+        @include mobile {
+          margin-right: 0.7rem;;
+        }
+      }
+  
+      .number_comment {
+        width: 4.92769rem;
+        height: 27.03px;
+        flex-shrink: 0;
+        color: #5c5c5c;
+        text-align: right;
+        font-size: 16px;
+        font-family: Roboto;
+        line-height: 24px;
+        position: absolute;
+        left:calc(80%);
+        @include mobile {
+          left:calc(70%);
+        }
+      }
+      
+    }
+  
+    .comment_board {
+      display: flex;
+      width: 100%;
+      height: 54px;
+      flex-shrink: 0;
+      margin: 38px 34px 35px 26px;
+
+      .profilepic{
+        border-radius: 74px;
+        object-fit: cover;
+      }
+      .comment {
+        display: flex;
+        width: 38.4375rem;
+        height: 2.3rem;
+        flex-direction: row;
+        flex-shrink: 0;
+        color: #777;
+        font-size: 20px;
+        font-family: Roboto;
+        line-height: 24px;
+        margin-left: 14.53px;
+        background: #F0F2F5;
+        border-radius: 0.625rem;
+        border: 1px solid #D9D9D9;
+        padding-left:1.5rem ;
+        padding-bottom:1.5rem ;
+        @include mobile {
+          width: 15rem;
+        }
+        @include laptop {
+          max-width:  50vw;
+        }
+        @include tablet {
+          max-width:  73vw;
+        }
+        @include largescreen {
+          max-width: 38vw;
+      
+        }
+          .commenttitle{
+            height: 24px;
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            
+          }
+          .vectorbox{
+            z-index: 999;
+            width: 25px;
+            height: 25px;
+            margin-right: 17px;
+            margin-top: 14.5px;
+            margin-left: auto;
+          }
+
+      }
+        .editcomment{
+          position: relative;
+          width: 38rem;
+          height: 2.375rem;
+          flex-shrink: 0;
+          background: #F0F2F5;
+          border: none;
+          outline: none;
+          border-radius: 0.625rem;
+          margin-left: 1.12rem;
+          resize: none;
+          color: #777;
+          font-family: Roboto;
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.5rem; /* 120% */
+          padding-left: 1.5rem;
+          padding-top: 1rem;
+          @include mobile {
+            width: 15rem;
+          }
+          @include laptop {
+            max-width:  50vw;
+          }
+          @include tablet {
+            max-width:  73vw;
+          }
+          @include largescreen {
+            max-width: 38vw;
+        
+          }
+    }.vectorbox{
+          position: relative;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          z-index: 99999;
+          bottom:1.25rem;
+          right:3rem;
+    }
+      }
+      .editing{
+      display: flex;
+      width: 709px;
+      height: 54px;
+      flex-shrink: 0;
+      margin: 38px 34px 35px 26px;
+      pointer-events: none;
+      }
+
+
+
+  }
+
+.board:hover .hoverIcon {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 21px;
+  width: 24px;
+  height: 24px;
+  background-image: url("/icon.jpg");
+  background-size: cover;
+  cursor: pointer; /* 在懸停時顯示為指標 */
+  pointer-events: auto; /* 允許與指標互動 */
+}
